@@ -1,4 +1,13 @@
 Nrithyanjali::Application.routes.draw do
+
+  get "static_pages/home"
+  root :to => 'static_pages#home'
+
+  match '/about', to: 'static_pages#about'
+  match '/ramya', to: 'static_pages#ramya'
+  match '/contact', to: 'static_pages#contact'
+
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
